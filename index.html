@@ -1,1 +1,17 @@
-This is for github
+Why do we have to store the input items to provide the required functionality?
+--We need to refer to the input values more than once in order to calculate each requirement, so in order to do that we have to store it in something like an arrayList.
+
+Why does the user no longer need to specify the item count up front?
+--Since we are using an ArrayList instead of a normal array, the amount of elements in the ArrayList can be edited and changed; it isn't fixed so therefore we 
+  don't have to specify the item count up front. This is unlike an array which has a fixed size.
+
+What is the key capability of Java lists, such as ArrayList, that makes it a better choice for this solution than basic native arrays?
+--Basic native arrays need to be made with a fixed index, while ArrayLists do not need to be specified how many elements it can hold at the beginning.
+
+What is the purpose of the RainfallStats class in terms of helping with maintainability and testability?
+--The RainfallStats class allows the statistics that need to be calculated to be represented as a single object, so we can easily refer to it when we are testing.
+  This also helps with maintability since everything is in one place and only one class needs to be referred to.
+
+Why does the core method need to take a List instead of just an ArrayList?
+--This has to do with the idea of polymorphism. ArrayList inherits from List, and the rest of the code can recognize the data from type List. It allows us to switch
+  between the various ways we used the List interface. List can be used with various types of objects and behave accordingly with each.
